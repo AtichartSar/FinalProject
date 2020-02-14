@@ -3,18 +3,19 @@
 
 <head>
     <title>Resume </title>
-    <link rel="stylesheet"  href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="myjs.js"></script>
 </head>
 
 <body>
-
-    <div class="container">
+    <script src=""></script>
+    <div class="container" id="container">
         <h1>I <span>Love my</span> code</h1>
         <div class="columns">
             <div class="col1">
-                <img class="img" src="/img/IMG_25610722_103811.jpg"  alt="">
+                <img class="img" src="/img/IMG_25610722_103811.jpg" alt="">
             </div>
-           
+
         </div>
 
 
@@ -23,18 +24,19 @@
             <div class="col1">
                 <h2>ABOUT ME</h2>
                 <hr>
-                Name : <label for="">Atichart Sarleephim</label> <br>
-                Nickname : <label for="">yu</label>              <br>
-                
+                Name : <label id="showfname" for="">Atichart </label> <label for=""
+                    id="showlname">Sarleephim</label><br>
+                Nickname : <label for="">yu</label> <br>
+
                 <h2>EDUCATION</h2>
                 <hr>
                 Bachelor Degrees in computer engineering <br>
                 Rajamangala University of Technology Isan
-                
+
             </div>
             <div class="col2">
                 <h2>SKILLS</h2>
-                <ul>
+                <ul id="list">
                     <li>กีฬาฟุตบอล</li>
                     <li>ทำงานเป็นทีม</li>
                     <li>ทำงานภายใต้แรงกดดันได้ดี</li>
@@ -51,16 +53,40 @@
         <div class="columns ">
             <div class="col3">
                 <h2>co3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                    culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
         </div>
 
         <div class="columns ">
-            <div class="col4">
-                <h2>co3</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="col1">
+                <h2>modify</h2>
+
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname"><br>
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname"><br><br>
+                <button onclick="myFunction()">modifyName</button>
+                
+
+
             </div>
-          
+            <div class="col1">
+                <h2>modify Skill</h2>
+                <label for="skill">Skill</label>
+                <input type="text" name="skill" id="skill">
+                <button onclick="addSkill()">add skill</button>
+                <button onclick="removeSkill()">remove Skill</button><br><br>
+
+                <input id="modifycolor" type="color">
+                <button onclick="modifyColor()">modify Color</button>
+
+
+            </div>
+
         </div>
 
 
