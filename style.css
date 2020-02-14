@@ -1,0 +1,30 @@
+
+  .columns{
+    display: flex;
+ 
+  }
+
+
+  .container{
+    width: 620px;
+    margin: 0 auto;
+    border: 2px solid red;
+    padding: 20px;
+    border-radius: 15px;
+
+  }
+.col1,.col2{
+    border: 2px solid gold;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    flex-grow: 2;
+}
+
+.col3,.col4{
+    border: 2px solid gold;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+    flex-grow: 2;
+}
